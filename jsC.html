@@ -2,46 +2,46 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <script type="text/javascript" src="main.js" charset="utf-8"></script>
+        <script type="text/javascript" src="jsC.js" charset="utf-8"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>  <!-- jqueryで実装する場合 -->
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="jsC.css">
         <title>電卓</title>
     </head>
 
     <body>
         <div class="main">
           <div class="display">
-            <input type ="text" style="text-align:right" class="display-text">
+            <input type ="text" id="inputDisplay" style="text-align:right" class="display-text">
           </div>
           <div class="btns">
             <div class="line-one">
-              <p><button class="btn btn-num" value="7" onclick="num()">7</button></p>
-              <p><button class="btn btn-num" value="8" onclick="num()">8</button></p>
-              <p><button class="btn btn-num" value="9" onclick="num()">9</button></p>
-              <p><button class="btn btn-mark" value="%" onclick="mark()">%</button></p>
-              <P><button class="btn btn-power" value="" onclick="power()">ON/C</button></p>
+              <p><button class="btn btn-num" value="7" onclick="num(this)">7</button></p>
+              <p><button class="btn btn-num" value="8" onclick="num(this)">8</button></p>
+              <p><button class="btn btn-num" value="9" onclick="num(this)">9</button></p>
+              <p><button class="btn btn-mark" value="%" onclick="mark(this)">%</button></p>
+              <P><button class="btn btn-power" value="" onclick="document.querySelector( 'input' ).value = ''">ON/C</button></p>
             </div>
             <div class="line-one">
-              <p><button class="btn btn-num" value="4" onclick="num()">4</button></p>
-              <p><button class="btn btn-num" value="5" onclick="num()">5</button></p>
-              <p><button class="btn btn-num" value="6" onclick="num()">6</button></p>
-              <p><button class="btn btn-mark" value="*" onclick="mark()">×</button></p>
-              <p><button class="btn btn-mark" value="/" onclick="mark()">÷</button></p>
+              <p><button class="btn btn-num" value="4" onclick="num(this)">4</button></p>
+              <p><button class="btn btn-num" value="5" onclick="num(this)">5</button></p>
+              <p><button class="btn btn-num" value="6" onclick="num(this)">6</button></p>
+              <p><button class="btn btn-mark" value="*" onclick="mark(this)">×</button></p>
+              <p><button class="btn btn-mark" value="/" onclick="mark(this)">÷</button></p>
             </div>
             <div class="line-one">
-              <p><button class="btn btn-num" value="1" onclick="num()">1</button></p>
-              <p><button class="btn btn-num" value="2" onclick="num()">2</button></p>
-              <p><button class="btn btn-num" value="3" onclick="num()">3</button></p>
-              <p><button class="btn btn-mark" value="-" onclick="mark()">-</button></p>
-              <p><button class="btn btn-mark btn-mark-plus" value="+" onclick="mark()">+</button></p>
+              <p><button class="btn btn-num" value="1" onclick="num(this)">1</button></p>
+              <p><button class="btn btn-num" value="2" onclick="num(this)">2</button></p>
+              <p><button class="btn btn-num" value="3" onclick="num(this)">3</button></p>
+              <p><button class="btn btn-mark" value="-" onclick="mark(this)">-</button></p>
+              <p><button class="btn btn-mark btn-mark-plus" value="+" onclick="mark(this)">+</button></p>
             </div>
             <div class="line-one">
-              <p><button class="btn btn-num" value="0" onclick="num()">0</button></p>
-              <p><button class="btn btn-num" value="." onclick="num()">.</button></p>
+              <p><button class="btn btn-num" value="0" onclick="num(this)">0</button></p>
+              <p><button class="btn btn-num" value="." onclick="num(this)">.</button></p>
               <p><button class="btn btn-equal" value="=" onclick="equal()">=</button></p>
             </div>
           </div>
         </div>
         
-        <script src="main.js"></script>
+        <script src="jsC.js"></script>
 </html>
